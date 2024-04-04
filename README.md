@@ -34,7 +34,7 @@ catkin_make
 
 - **to run the code**
 
-export ROS_PACKAGE_PATH=/home/sx/catkin_ws/src/:$ROS_PACKAGE_PATH
+export ROS_PACKAGE_PATH=/home/sx/catkin_ws/src/:$ROS_PACKAGE_PATH  (change the path accordingly)
 
 roslaunch  husky_mpc_datadriven  world1_1.launch
 
