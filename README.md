@@ -1,38 +1,44 @@
 # Rover navigation
 
-1. wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh && chmod +x ./ros_install_noetic.sh && ./ros_install_noetic.sh
+**install python packages to work in ROS**
 
-2. sudo apt install ros-$ROS_DISTRO-catkin python3-catkin-tools\
+sudo apt install python3-catkin-tools python3-osrf-pycommon
 
-3. sudo apt install python3-catkin-tools python3-osrf-pycommon
+sudo apt install python3-wstool
 
-4. sudo apt install python3-wstool
+**install ros related packages**
 
-5. sudo apt install ros-noetic-moveit
+wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh && chmod +x ./ros_install_noetic.sh && ./ros_install_noetic.sh
 
-6. sudo apt install ros-noetic-rqt-controller-manager
+sudo apt install ros-$ROS_DISTRO-catkin python3-catkin-tools\
+   
+sudo apt install ros-noetic-moveit
 
-7. sudo apt install ros-noetic-rqt-joint-trajectory-controller
+sudo apt install ros-noetic-rqt-controller-manager
 
-8. sudo apt install ros-noetic-rqt-multiplot
+sudo apt install ros-noetic-rqt-joint-trajectory-controller
 
-9. sudo apt install husky_gazebo
+sudo apt install ros-noetic-rqt-multiplot
 
-10. sudo apt-get install ros-noetic-husky-simulator
+sudo apt install husky_gazebo
 
-11. cd ~/
+sudo apt-get install ros-noetic-husky-simulator
+
+cd ~/
   
-12. mkdir --parents catkin_ws/src (put files in this folder)
+mkdir --parents catkin_ws/src (put files in this folder)
     
-13. cd catkin_ws
+cd catkin_ws
 
-14. catkin_make
+catkin_make
 
-15. export ROS_PACKAGE_PATH=/home/sx/catkin_ws/src/:$ROS_PACKAGE_PATH
+**to run the code**
 
-16. roslaunch  husky_mpc_datadriven  world1_1.launch
-    
-17. python3 fullK1_1.py
+export ROS_PACKAGE_PATH=/home/sx/catkin_ws/src/:$ROS_PACKAGE_PATH
+
+roslaunch  husky_mpc_datadriven  world1_1.launch
+
+python3 fullK1_1.py
 
 
 The following might be optional...
