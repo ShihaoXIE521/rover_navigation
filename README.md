@@ -41,7 +41,7 @@ roslaunch  husky_mpc_datadriven  world1_1.launch
 python3 fullK1_1.py
 
 
-- **The following might be optional...**
+- **The following is not needed, just leave here as a record...**
 
 (echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
