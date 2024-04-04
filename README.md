@@ -1,12 +1,12 @@
 # Rover navigation
 
-**install python packages to work in ROS**
+- **install python packages to work in ROS**
 
 sudo apt install python3-catkin-tools python3-osrf-pycommon
 
 sudo apt install python3-wstool
 
-**install ros related packages**
+- **install ros related packages**
 
 wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh && chmod +x ./ros_install_noetic.sh && ./ros_install_noetic.sh
 
@@ -32,7 +32,7 @@ cd catkin_ws
 
 catkin_make
 
-**to run the code**
+- **to run the code**
 
 export ROS_PACKAGE_PATH=/home/sx/catkin_ws/src/:$ROS_PACKAGE_PATH
 
@@ -41,18 +41,18 @@ roslaunch  husky_mpc_datadriven  world1_1.launch
 python3 fullK1_1.py
 
 
-The following might be optional...
+- **The following might be optional...**
 
-(2. echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+(echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
-3. source ~/.bashrc
+source ~/.bashrc
    
-17. python3-osrf-pycommon\
+python3-osrf-pycommon\
 
-19. sudo apt install ros-$ROS_DISTRO-moveit\
+sudo apt install ros-$ROS_DISTRO-moveit\
 
-20. sudo apt install ros-$ROS_DISTRO-rqt-controller-manager\
+sudo apt install ros-$ROS_DISTRO-rqt-controller-manager\
 
-21. ros-$ROS_DISTRO-rqt-joint-trajectory-controller\
+ros-$ROS_DISTRO-rqt-joint-trajectory-controller\
 
-22. ros-$ROS_DISTRO-rqt-multiplot\)
+ros-$ROS_DISTRO-rqt-multiplot\)
